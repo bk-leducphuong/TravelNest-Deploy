@@ -60,7 +60,8 @@ Argo CD then syncs the full stack from this repository.
 
 ## Before First Deploy
 
-- Replace all `CHANGE_ME` placeholders in app and infra secrets.
+- Replace all `${VAR}` placeholders in app and infra secrets with `envsubst` or your
+  preferred secret templating step before applying manifests.
 - Replace `docker.io/your-dockerhub-user/...` image names in each prod overlay.
 - Point `MONGODB_URI` and Elasticsearch credentials at your cloud-managed services.
 - If you do not want public MinIO object delivery at `storage.deployserver.work`,

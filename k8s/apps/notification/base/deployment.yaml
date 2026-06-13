@@ -16,13 +16,6 @@ spec:
         - name: notification
           image: travelnest-notification:latest
           imagePullPolicy: Always
-          command:
-            - /bin/sh
-            - -c
-          args:
-            - |
-              export MYSQL_DSN="${DB_USER}:${DB_PASSWORD}@tcp(mysql:3306)/${DB_NAME}?parseTime=true"
-              exec /app/notification
           envFrom:
             - configMapRef:
                 name: notification-config
