@@ -5,3 +5,5 @@ metadata:
 data:
   MYSQL_DATABASE: travelnest
   MYSQL_USER: travelnest
+  KEYCLOAK_DB_NAME: keycloak
+  KEYCLOAK_DB_USER: keycloak

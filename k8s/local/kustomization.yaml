@@ -5,6 +5,7 @@ resources:
   - ../infra/mysql
   - ../infra/redis
   - ../infra/nats
+  - ../infra/keycloak/overlays/local
   - minio
   - ../apps/analytics/overlays/local
   - ../apps/media/overlays/local

@@ -53,6 +53,14 @@ spec:
           volumeMounts:
             - name: data
               mountPath: /var/lib/mysql
+            - name: init-scripts
+              mountPath: /docker-entrypoint-initdb.d
+              readOnly: true
+      volumes:
+        - name: init-scripts
+          configMap:
+            name: mysql-init-scripts
+            defaultMode: 493
   volumeClaimTemplates:
     - metadata:
         name: data

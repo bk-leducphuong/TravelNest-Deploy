@@ -6,6 +6,7 @@ resources:
   - apps/infra-redis.yaml
   - apps/infra-minio.yaml
   - apps/infra-nats.yaml
+  - apps/infra-keycloak.yaml
   - apps/app-analytics.yaml
   - apps/app-media.yaml
   - apps/app-notification.yaml

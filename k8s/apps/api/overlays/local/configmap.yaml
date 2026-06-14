@@ -30,6 +30,10 @@ data:
   MINIO_USE_SSL: "false"
   API_BASE_URL: http://api.travelnest.local/api/v1
   EXTERNAL_BASE_URL: http://api.travelnest.local
+  KEYCLOAK_ISSUER: http://keycloak.travelnest.local/realms/travelnest
+  KEYCLOAK_CLIENT_ID: travelnest-web
+  KEYCLOAK_AUDIENCE: travelnest-web
+  KEYCLOAK_CLOCK_SKEW_SECONDS: "60"
   WORKER_HEALTH_PORT: "4001"
   REDIS_USERNAME: ""
   ELASTICSEARCH_USERNAME: ""
